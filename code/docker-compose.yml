@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  deepseek:
+    build:
+      context: .
+    container_name: deepseek_api
+    volumes:
+      - .:/app
+    environment:
+      - OPENAI_API_KEY=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
+    command: python deepseek_api.py
