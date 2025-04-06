@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install Python dependencies
-RUN pip install --no-cache-dir openai
+RUN pip install --no-cache-dir openai python-dotenv
 
 # Command to run the application
 CMD ["python", "deepseek_api.py"]
